@@ -37,7 +37,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hello, I&apos;m an indie app developer based in Singapore!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -79,21 +79,22 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Ming Jie is a freelance and a full-stack developer based in Osaka with a
+          Ming Jie is a full-stack developer based in Singapore with a
           passion for building digital services/stuff he wants. He has a knack
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
+          playing squash. 
+          {/* Currently, he is living off of his own
           product called{' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
             <Link>Inkdrop</Link>
-          </NextLink>
-          . He publishes content for marketing his products and his YouTube
+          </NextLink> */}
+          {/* . He publishes content for marketing his products and his YouTube
           channel called &quot;
           <NextLink href="https://www.youtube.com/devaslife" passHref>
             <Link target="_blank">Dev as Life</Link>
           </NextLink>
-          &quot; has more than 100k subscribers.
+          &quot; has more than 100k subscribers. */}
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -109,22 +110,21 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1996</BioYear>
+          Born in Singapore.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2021</BioYear>
+          Completed the Bachelor&apos;s Program in the Electrical Engineering
+          w/ Minor in Computer Science & Economics at National University of Singapore
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2018</BioYear>
+          Worked at Systems on Silicon Manufacturing, joint Venture between NXP and TSMC
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2021 to present</BioYear>
+          Working at Singapore Technologies (ST) Engineering
         </BioSection>
       </Section>
 
@@ -151,28 +151,28 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/mingjie" target="_blank">
+            <Link href="https://github.com/nmingjie" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @mingjie
+                @nmingjie
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.linkedin.com/in/nmingjie/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedIn />}
               >
-                @inkdrop_app (English)
+                @nmingjie
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://twitter.com/mingjie" target="_blank">
               <Button
                 variant="ghost"
@@ -182,8 +182,8 @@ const Home = () => (
                 @mingjie (日本語)
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </ListItem> */}
+          {/* <ListItem>
             <Link href="https://instagram.com/mingjie" target="_blank">
               <Button
                 variant="ghost"
@@ -193,7 +193,7 @@ const Home = () => (
                 @mingjie
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
