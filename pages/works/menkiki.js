@@ -48,21 +48,21 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Presentation</Meta>
-          <Link href="https://speakerdeck.com/craftzdog/the-fun-deep-learning">
+          <Link href="https://speakerdeck.com/mingjie/the-fun-deep-learning">
             The fun Deep Learning <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Presentation</Meta>
-          <Link href="https://speakerdeck.com/craftzdog/caffedeoshou-qing-ben-ge-deipuraninguiosapuri">
+          <Link href="https://speakerdeck.com/mingjie/caffedeoshou-qing-ben-ge-deipuraninguiosapuri">
             Caffeでお手軽本格ディープラーニングアプリ @potatotips{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/craftzdog/caffe-ios-sample">
-            github.com/craftzdog/caffe-ios-sample <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/mingjie/caffe-ios-sample">
+            github.com/mingjie/caffe-ios-sample <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
