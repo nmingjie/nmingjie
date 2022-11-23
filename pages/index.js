@@ -84,17 +84,17 @@ const Home = () => (
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
           playing squash. 
-          Currently, he is living off of his own
+          {/* Currently, he is living off of his own
           product called{' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
             <Link>Inkdrop</Link>
-          </NextLink>
-          . He publishes content for marketing his products and his YouTube
+          </NextLink> */}
+          {/* . He publishes content for marketing his products and his YouTube
           channel called &quot;
           <NextLink href="https://www.youtube.com/devaslife" passHref>
             <Link target="_blank">Dev as Life</Link>
           </NextLink>
-          &quot; has more than 100k subscribers.
+          &quot; has more than 100k subscribers. */}
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -166,13 +166,13 @@ const Home = () => (
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoLinkedIn />}
+                leftIcon={<IoLogoGithub />}
               >
                 @nmingjie
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://twitter.com/mingjie" target="_blank">
               <Button
                 variant="ghost"
@@ -182,8 +182,8 @@ const Home = () => (
                 @mingjie (日本語)
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </ListItem> */}
+          {/* <ListItem>
             <Link href="https://instagram.com/mingjie" target="_blank">
               <Button
                 variant="ghost"
@@ -193,7 +193,7 @@ const Home = () => (
                 @mingjie
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>

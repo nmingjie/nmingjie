@@ -1,12 +1,6 @@
 # Ming Jie's Homepage
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
-
-## Tutorial
-
-Watch how I built this website on YouTube:
-
-[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
+[https://nmingjie.vercel.app/](https://nmingjie.vercel.app/)
 
 ## Stack
 
