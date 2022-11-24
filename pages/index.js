@@ -18,8 +18,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+// import thumbYouTube from '../public/images/links/youtube.png'
+// import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbCNA from '../public/images/works-mj/cna-pdd.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -84,6 +85,13 @@ const Home = () => (
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
           playing squash. 
+          </Paragraph>
+          <Paragraph>
+          In 2022, he was {' '}
+          <NextLink href="https://www.channelnewsasia.com/watch/countries-share-lessons-covid-19-shape-cities-indranee-rajah-2848451" passHref>
+            <Link target="_blank">featured in CNA </Link>
+          </NextLink>
+          for one of his project.
           {/* Currently, he is living off of his own
           product called{' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
@@ -107,25 +115,90 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Experiences
         </Heading>
         <BioSection>
-          <BioYear>1996</BioYear>
-          Born in Singapore.
+          <BioYear>2019</BioYear>
+          Worked at {' '}
+          <Link href="https://www.ssmc.com/" target="_blank">
+           Systems on Silicon Manufacturing (SSMC)
+          </Link>
+          {/* Worked at Systems on Silicon Manufacturing (SSMC) */}
+        </BioSection>
+        <BioSection>
+          <BioYear>2021 to present</BioYear>
+          Working at {' '}
+          <Link href="https://www.stengg.com/" target="_blank">
+          Singapore Technologies (ST) Engineering
+           </Link>
+        </BioSection>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Education
+        </Heading>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          Summer & Winter Program at Hong Kong University of Science and Technology (HKUST), Hong Kong & Hanyang International, South Korea respectively.
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Semester Exchange at Delft University of Technology (Delft TU), Netherlands 
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
           Completed the Bachelor&apos;s Program in the Electrical Engineering
-          w/ Minor in Computer Science & Economics at National University of Singapore
+          w/ Minor in Computer Science & Economics at National University of Singapore (NUS) with First Class Honours (4.77 / 5.0)
+          <Paragraph>
+            Relevant Software Engineering Modules: Programming Methodology (CS1010), Programming Methodology II (CS2030), Data Structure & Algo (CS2040), Database Technology & Management (IT2002), Software Product Engineering for Digital Market (CS3216), Computer Networks (EE4204)
+            {/* , Network Protocols and Applications (EE4210) */}
+          </Paragraph>
+          <Paragraph>
+            Relevant Machine Learning Modules:  Regression Analysis (ST3131), Artificial Intelligence (CS3243), Machine Learning (CS3244), Image Processing & Analysis (EE4704), Computer Vision (EE4212)
+            {/* , Fuzzy/Neural Systems (EE4305)  */}
+          </Paragraph>
         </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
-          Worked at Systems on Silicon Manufacturing (SSMC)
-        </BioSection>
-        <BioSection>
-          <BioYear>2021 to present</BioYear>
-          Working at Singapore Technologies (ST) Engineering
-        </BioSection>
+      </Section>
+
+      
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Programming Language
+        </Heading>
+        <Paragraph>
+          Java, Javascript, Python, C, SQL
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Frameworks / Popular Libaries
+        </Heading>
+        <Paragraph>
+          Frameworks: Django, AngularJS, React, Node.js 
+        </Paragraph>
+        <Paragraph>
+          Libaries: pandas, Highcharts, Three.js
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Software Tools / Application
+        </Heading>
+        <Paragraph>
+          Postman, Grafana, Prometheus, Postgres
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Design Tools
+        </Heading>
+        <Paragraph>
+          Figma
+        </Paragraph>
       </Section>
 
       <Section delay={0.3}>
@@ -133,18 +206,21 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Coffee{' '}
+          Coffee
+          {/* {' '} */}
           {/* <Link href="https://illust.odoruinu.net/" target="_blank">
             Drawing
           </Link> */}
-          , Sports (Squash, Badminton, Rollerblading, Snowboarding) {' '}
+          , Sports (Squash, Badminton, Rollerblading, Snowboarding) 
+          {/* {' '} */}
           {/* <Link href="https://500px.com/p/mingjie" target="_blank">
             Photography
           </Link> */}
           {/* , Leica, Machine Learning */}
-          , Eating Good Food
+          & Eating Good Food
         </Paragraph>
       </Section>
+
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -198,29 +274,31 @@ const Home = () => (
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
+          {/* <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
             thumbnail={thumbYouTube}
           >
             My YouTube channel (&gt;100k subs)
-          </GridItem>
+          </GridItem> */}
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            href="https://www.channelnewsasia.com/watch/countries-share-lessons-covid-19-shape-cities-indranee-rajah-2848451"
+            title="CNA Feature"
+            thumbnail={thumbCNA}
           >
-            A Markdown note-taking app
+            Featured in CNA for one of my project.
           </GridItem>
         </SimpleGrid>
 
-        <Box align="center" my={4}>
+        {/* <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Popular posts
             </Button>
           </NextLink>
-        </Box>
+        </Box> */}
+
+
       </Section>
     </Container>
   </Layout>
