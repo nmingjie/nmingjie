@@ -119,7 +119,7 @@ const Home = () => (
           w/ Minor in Computer Science & Economics at National University of Singapore
         </BioSection>
         <BioSection>
-          <BioYear>2018</BioYear>
+          <BioYear>2019</BioYear>
           Worked at Systems on Silicon Manufacturing (SSMC)
         </BioSection>
         <BioSection>
@@ -137,12 +137,12 @@ const Home = () => (
           {/* <Link href="https://illust.odoruinu.net/" target="_blank">
             Drawing
           </Link> */}
-          , Playing Squash,{' '}
+          , Sports (Squash, Badminton, Rollerblading, Snowboarding) {' '}
           {/* <Link href="https://500px.com/p/mingjie" target="_blank">
             Photography
           </Link> */}
           {/* , Leica, Machine Learning */}
-          , Food
+          , Eating Good Food
         </Paragraph>
       </Section>
 
