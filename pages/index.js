@@ -120,7 +120,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          Worked at Systems on Silicon Manufacturing, joint Venture between NXP and TSMC
+          Worked at Systems on Silicon Manufacturing (SSMC)
         </BioSection>
         <BioSection>
           <BioYear>2021 to present</BioYear>
@@ -133,15 +133,16 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
+          Coffee{' '}
+          {/* <Link href="https://illust.odoruinu.net/" target="_blank">
             Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/mingjie" target="_blank">
+          </Link> */}
+          , Playing Squash,{' '}
+          {/* <Link href="https://500px.com/p/mingjie" target="_blank">
             Photography
-          </Link>
-          , Leica, Machine Learning
+          </Link> */}
+          {/* , Leica, Machine Learning */}
+          , Food
         </Paragraph>
       </Section>
 
@@ -196,7 +197,7 @@ const Home = () => (
           </ListItem> */}
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -211,7 +212,7 @@ const Home = () => (
           >
             A Markdown note-taking app
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>

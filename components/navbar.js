@@ -74,15 +74,15 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          {/* <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">
+          </LinkItem> */}
+          {/* <LinkItem href="https://uses.craftz.dog/">
             Uses
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem
             target="_blank"
-            href="https://github.com/mingjie/mingjie-homepage"
+            href="https://github.com/nmingjie/"
             path={path}
             display="inline-flex"
             alignItems="center"
