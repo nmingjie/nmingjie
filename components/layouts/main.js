@@ -18,7 +18,8 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Ming Jie's homepage" />
         <meta name="author" content="Neo Ming Jie" />
         <meta name="author" content="mingjie" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        {/* <link rel="apple-touch-icon" href="apple-touch-icon.png" /> */}
+        <link rel="apple-touch-icon" href="user-avatar.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:title" content="Neo Ming Jie" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -28,7 +29,8 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Neo Ming Jie" />
         <meta name="og:title" content="Neo Ming Jie" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
+        {/* <meta property="og:image" content="https://www.craftz.dog/card.png" /> */}
+        <meta property="og:image" content="user-avatar.png" />
         <title>Neo Ming Jie - Homepage</title>
       </Head>
 

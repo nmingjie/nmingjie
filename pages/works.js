@@ -23,10 +23,8 @@ const Works = () => (
 
     <SimpleGrid columns={[1, 1, 2]} gap={6}>
     <Section>
-        <WorkGridItem id="inkdrop" title="ST-JTC PDD Building Management Dashboard" thumbnail={thumbInkdrop}>
-        Created 2 interactive dashboards using Tableau
-        for the department. Dashboards are connected to
-        Oracle database.
+        <WorkGridItem id="inkdrop" title="Smart Facilities Estate Management System (SFEMS)" thumbnail={thumbInkdrop}>
+        Dashboard offering various operational workflows for facility management. SFEMs is a joint collaboration between ST-JTC on punggol digital district (PDD). 
         </WorkGridItem>
       </Section>
       <Section>

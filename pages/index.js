@@ -91,7 +91,7 @@ const Home = () => (
           <NextLink href="https://www.channelnewsasia.com/watch/countries-share-lessons-covid-19-shape-cities-indranee-rajah-2848451" passHref>
             <Link target="_blank">featured in CNA </Link>
           </NextLink>
-          for one of his project.
+          whilst demonstrating his team&apos;s project - &quot;Smart City Operating Systems&quot; in one of the major convention (World Cities Summit 2022).
           {/* Currently, he is living off of his own
           product called{' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
@@ -283,10 +283,10 @@ const Home = () => (
           </GridItem> */}
           <GridItem
             href="https://www.channelnewsasia.com/watch/countries-share-lessons-covid-19-shape-cities-indranee-rajah-2848451"
-            title="CNA Feature"
+            title="Featured on National TV"
             thumbnail={thumbCNA}
           >
-            Featured in CNA for one of my project.
+            Featured in CNA & Ch5 for Smart City OS.
           </GridItem>
         </SimpleGrid>
 
