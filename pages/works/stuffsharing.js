@@ -3,7 +3,9 @@ import {
   Badge,
   Link,
   List,
-  ListItem
+  ListItem,
+  // Heading,
+  UnorderedList
   // ,
   // AspectRatio
 } from '@chakra-ui/react'
@@ -12,24 +14,48 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
+
 const Work = () => (
-  <Layout title="Hoot Dat!">
+  <Layout title="Stuff-Sharing Platform">
     <Container>
       <Title>
-        Hoot Dat! <Badge>2020-</Badge>
+      Stuff-Sharing Platform <Badge>2020</Badge>
       </Title>
       <P>
-      Hoot Dat is a real-time multiplayer question-and-answer guessing game where 
-      in each round, a player (answerer) - unknown to the rest - is randomly 
-      selected to answer a question. After the answerer has answered the question, 
-      the other players (guessers) have to guess who answered the question 
-      while a timer ticks away..
+      The system allows people to borrow or lend stuff that they own (tools, appliances,
+      furniture or books) either free or for a fee. Users advertise stuff available 
+      (what stuff, where to pick up and return, when it is available, etc.) or can 
+      browse the available stuff and bid to borrow some stuff. The stuff owner 
+      or the system (your choice) chooses the successful bid. Each user has an 
+      account. Administrators can create, modify and delete all entries. 
+      Please refer to {' '}
+      <Link href="https://www.snapgoods.com" target="_blank">
+        https://www.snapgoods.com
+      </Link>, {' '}
+      <Link href="https://ww.peerby.com" target="_blank">
+      https://ww.peerby.com
+      </Link>{' '} or other stuff 
+      sharing sites for examples and data.
+      <br></br>
+      <b>Features</b>
+      <UnorderedList ml={10} my={2}>
+        <ListItem>
+          CRUD for Users, Stuff/Posts, Offers
+        </ListItem>
+        <ListItem>
+          Search for stuff
+        </ListItem>
+        <ListItem>
+          Administrive Privileges
+        </ListItem>
+      </UnorderedList>
       </P>
+
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://hoot-dat.netlify.app/">
-            https://hoot-dat.netlify.app/ <ExternalLinkIcon mx="2px" />
+          <Link href="">
+            TBA <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -38,28 +64,17 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, NodeJS/Express, Socket.IO, Redis, and PostgreSQL</span>
+          <span>Django and PostgreSQL</span>
         </ListItem>
-        {/* <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://blog.Hoot Dat!.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">
-            How I’ve Attracted The First 500 Paid Users For My SaaS That Costs
-            $5/mo <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem> */}
+        <ListItem>
+          <Meta>Team</Meta>
+          <span>Individual</span>
+        </ListItem>
       </List>
 
-      <WorkImage src="/images/works-mj/hootdat_screens.png" alt="Hoot Dat!" />
-      {/* <WorkImage src="/images/works/Hoot Dat!_02.png" alt="Hoot Dat!" /> */}
-      {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
-        <iframe
-          src="https://www.youtube.com/embed/-qBavwqc_mY"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </AspectRatio> */}
+      <WorkImage src="/images/works-mj/stuffsharing_home.png" alt="Stuff Sharing" />
+      <WorkImage src="/images/works-mj/stuffsharing_search.png" alt="Stuff Sharing" />
+
     </Container>
   </Layout>
 )

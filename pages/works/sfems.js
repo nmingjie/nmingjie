@@ -1,65 +1,98 @@
 import {
   Container,
   Badge,
-  Link,
+  // Link,
   List,
-  ListItem
+  ListItem,
+  SimpleGrid,
+  Heading,
+  Divider
   // ,
   // AspectRatio
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+// import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import Section from '../../components/section'
+import { WorkGridItem } from '../../components/grid-item'
+
+import thumbAirbitat from '../../public/images/works-mj/sfems_airbitat.png'
+import thumbEV from '../../public/images/works-mj/sfems_ev.png'
 
 const Work = () => (
-  <Layout title="Hoot Dat!">
+  <Layout title="Smart Facility Estate Management System">
     <Container>
       <Title>
-        Hoot Dat! <Badge>2020-</Badge>
+      SFEMS <Badge>2022-</Badge>
       </Title>
       <P>
-      Hoot Dat is a real-time multiplayer question-and-answer guessing game where 
-      in each round, a player (answerer) - unknown to the rest - is randomly 
-      selected to answer a question. After the answerer has answered the question, 
-      the other players (guessers) have to guess who answered the question 
-      while a timer ticks away..
+        Smart Facility Estate Management System (SFEMS) offers various operational 
+        workflows to help facility managers manage estates.
+        SFEMs is a joint collaboration between ST-JTC for the punggol digital district (PDD)
+        area in Singapore.
       </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://hoot-dat.netlify.app/">
-            https://hoot-dat.netlify.app/ <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-        <ListItem>
           <Meta>Platform</Meta>
-          <span>Web</span>
+          <span>Web, iOS, Android</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, NodeJS/Express, Socket.IO, Redis, and PostgreSQL</span>
+          <span>AngularJS, NodeJS and MSSQL</span>
         </ListItem>
-        {/* <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://blog.Hoot Dat!.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">
-            How I’ve Attracted The First 500 Paid Users For My SaaS That Costs
-            $5/mo <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem> */}
+        <ListItem>
+          <Meta>Team</Meta>
+          <span>Team of 8</span>
+        </ListItem>
       </List>
 
-      <WorkImage src="/images/works-mj/hootdat_screens.png" alt="Hoot Dat!" />
-      {/* <WorkImage src="/images/works/Hoot Dat!_02.png" alt="Hoot Dat!" /> */}
-      {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
-        <iframe
-          src="https://www.youtube.com/embed/-qBavwqc_mY"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </AspectRatio> */}
+      <WorkImage src="/images/works-mj/sfems_eyecatch21.png" alt="SFEMS" />
+      <WorkImage src="/images/works-mj/sfems05.png" alt="SFEMS" />
+
+      <Section>
+      <Heading as="h3" fontSize={16} mb={4}>
+        Demonstrations & Presentations
+      </Heading>
+      </Section>
+      <WorkImage src="/images/works-mj/sfems_demo_wcs01.png" alt="SFEMS" />
+      World City Summit 2022 at Marina Bay Sands Convention Center
+
+      <Divider my={2} />
+
+      <WorkImage src="/images/works-mj/sfems_demo_sc.png" alt="SFEMS" />
+      ST-JTC PDD Steering Commitee attended by upper management
+
+      <Divider my={6} />
+
+    
+      <Section>
+      <Heading as="h3" fontSize={16} mb={4}>
+        Asset Management
+      </Heading>
+      </Section>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section>
+        <WorkGridItem id="sfems" title="Airbitat" thumbnail={thumbAirbitat}>
+        Integration: Airbitat
+        </WorkGridItem>
+      </Section>
+      <Section>
+        <WorkGridItem id="sfems" title="EV" thumbnail={thumbEV}>
+        Integration: EV
+        </WorkGridItem>
+      </Section>
+      </SimpleGrid>
+
+      <Divider my={6} />
+
+      <Section>
+      <Heading as="h3" fontSize={16} mb={4}>
+        Event Monitoring
+      </Heading>
+      </Section>
+      
     </Container>
   </Layout>
 )

@@ -19,43 +19,16 @@ const Works = () => (
     </Heading>
 
     <SimpleGrid columns={[1, 1, 2]} gap={6}>
-    <Section>
-        <WorkGridItem id="sfems" title="SFEMS" thumbnail={thumbSFEMS}>
-        Management solution offering various operational workflows for facility management.
-        {/*  SFEMs is a joint collaboration between ST-JTC on punggol digital district (PDD).  */}
-        </WorkGridItem>
-      </Section>
       <Section>
+        <WorkGridItem id="sfems" title="SFEMS" thumbnail={thumbSFEMS}>
+        Facility Management System
+        </WorkGridItem>
+      </Section>
+      <Section delay={0.1}>
         <WorkGridItem id="hootdat" title="Hoot Dat!" thumbnail={thumbHootDat}>
-        Hootdat is a digital game created to help foster closer bonds between people during the COVID-19 period.
+        Digital game created to help foster closer bonds between people during COVID-19.
         </WorkGridItem>
       </Section>
-      {/* <Section>
-        <WorkGridItem
-          id="walknote"
-          title="walknote"
-          thumbnail={thumbWalknote}
-        >
-          Music recommendation app for iOS
-        </WorkGridItem>
-      </Section>
-
-      <Section delay={0.1}>
-        <WorkGridItem
-          id="fourpainters"
-          title="The four painters"
-          thumbnail={thumbFourPainters}
-        >
-          A video work generated with deep learning, imitating famous four
-          painters like Van Gogh
-        </WorkGridItem>
-      </Section>
-      <Section delay={0.1}>
-        <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-          An app that suggests ramen(noodle) shops based on a given photo of
-          the ramen you want to eat
-        </WorkGridItem>
-      </Section> */}
     </SimpleGrid>
 
 
@@ -68,36 +41,28 @@ const Works = () => (
     </Section>
 
     <SimpleGrid columns={[1, 1, 2]} gap={6}>
-      {/* <Section delay={0.5}>
-        <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-          Twitter client app for iPhone Safari
-        </WorkGridItem>
-      </Section> */}
-      <Section>
-        <WorkGridItem id="inkdrop" title="Crowdfunding Platform" thumbnail={thumbStuffSharing}>
+      <Section delay={0.5}>
+        <WorkGridItem id="stuffsharing" title="Stuff Sharing Platform" thumbnail={thumbStuffSharing}>
         {/* Crowdfunding is a  */}
-        System of catalogue of projects looking for crowdfunding.
+        Platform that allows people to borrow or lend stuff that they own
         </WorkGridItem>
       </Section>
       <Section delay={0.5}>
         <WorkGridItem
-          id=""
+          id="fitnus"
           thumbnail={thumbFitNUS}
           title="FitNUS"
         >
-          FitNUS is a fitness tracking system. It is a hardware
-          prototype that uses LPCXpresso microcontroller
-          board to track the status of a climber.
+          Climbing fitness tracking system
         </WorkGridItem>
       </Section>
       <Section delay={0.5}>
         <WorkGridItem
-          id=""
+          id="soundsystem"
           thumbnail={thumbSoundSystem}
           title="Real-time Sound System"
         >
-          Hardware prototype that uses FPGA 
-          application device to
+          FPGA hardware prototype that
           play and record sounds.
         </WorkGridItem>
       </Section>
@@ -107,9 +72,7 @@ const Works = () => (
           thumbnail={thumbSSMC}
           title="SSMC Dashboard"
         >
-          Created 2 interactive dashboards using Tableau
-          for the department. Dashboards are connected to
-          Oracle database.
+          Tableau Dashboards to help improve QA workflow
         </WorkGridItem>
       </Section>
       {/* <Section delay={0.6}>

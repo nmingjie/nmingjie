@@ -40,26 +40,38 @@ const Work = () => (
           <Meta>Stack</Meta>
           <span>React, NodeJS/Express, Socket.IO, Redis, and PostgreSQL</span>
         </ListItem>
-        {/* <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://blog.Hoot Dat!.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">
-            How I’ve Attracted The First 500 Paid Users For My SaaS That Costs
-            $5/mo <ExternalLinkIcon mx="2px" />
+        <ListItem>
+          <Meta>Team</Meta>
+          <span>
+          <Link href="https://github.com/gary-lgy" target="_blank">
+          Gary
+          </Link>,{' '}
+          <Link href="https://github.com/geoboom" target="_blank">
+          Geogie
+          </Link>,{' '}
+          <Link href="https://github.com/jonchan51" target="_blank">
+          Jonathan
           </Link>
-        </ListItem> */}
+          {' '} & Myself</span>
+        </ListItem>
       </List>
 
       <WorkImage src="/images/works-mj/hootdat_screens.png" alt="Hoot Dat!" />
-      {/* <WorkImage src="/images/works/Hoot Dat!_02.png" alt="Hoot Dat!" /> */}
-      {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
-        <iframe
-          src="https://www.youtube.com/embed/-qBavwqc_mY"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </AspectRatio> */}
+      <P>
+      The idea for this game was conceived when we were brainstorming on a virtual 
+      icebreaker game. At first, we were looking at games like Among Us, skribbl.io,
+      bonk.io, and 2-truths-1-lie, hoping to build something similar to them where
+      people could hang out, get to know each other, and have a good time. But 
+      we didn’t want to copy what was already out there, so we cracked our heads 
+      further, thinking about what we could build that people would play.
+
+      Countless hours passed inconclusively debating over the game to build until finally,
+      it stuck us. Why not build something that conveys the very spirit of icebreakers: 
+      getting to know each other better? It was such a simple motivation, yet it was 
+      the very answer to our predicament. And so we iterated further on that idea with a
+      twist, leading to the conception of Hoot Dat, a fusion between Among Us and
+      2-truths-1-lie.
+      </P>
     </Container>
   </Layout>
 )
