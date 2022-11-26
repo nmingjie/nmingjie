@@ -9,19 +9,23 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Badge,
+  // UnorderedList
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear, BioBadge, BioList, BioListItem, BioUnorderedList } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5' 
+// IoLogoFigma
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbCNA from '../public/images/works-mj/cna-pdd.png'
+import thumbCNA from '../public/images/works-mj/sfems_pdd_cna.png'
 import Image from 'next/image'
+import { Meta } from '../components/work'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -81,17 +85,21 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Ming Jie is a full-stack developer based in Singapore with a
-          passion for building digital services/stuff he wants. He has a knack
+          passion for learning & building digital solutions. {' '}
+          {/* He has a knack
           for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          playing squash. 
+          way to solving real-life problems with code.  */}
+          When not online, he loves playing squash. 
           </Paragraph>
           <Paragraph>
           In 2022, he was {' '}
           <NextLink href="https://www.channelnewsasia.com/watch/countries-share-lessons-covid-19-shape-cities-indranee-rajah-2848451" passHref>
-            <Link target="_blank">featured in CNA </Link>
+            <Link target="_blank">featured on CNA </Link>
           </NextLink>
-          whilst demonstrating his team&apos;s project - &quot;Smart City Operating Systems&quot; in one of the major convention (World Cities Summit 2022).
+          whilst demonstrating his team&apos;s project - &quot;Smart City Operating 
+          Systems&quot; in World Cities Summit 2022, one of the major convention 
+          where government leaders and industry experts meet to address liveable
+           and sustainable city challenges.
           {/* Currently, he is living off of his own
           product called{' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
@@ -134,31 +142,85 @@ const Home = () => (
         </BioSection>
       </Section>
 
-      <Section delay={0.2}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Education
         </Heading>
         <BioSection>
-          <BioYear>2018</BioYear>
-          Summer & Winter Program at Hong Kong University of Science and Technology (HKUST), Hong Kong & Hanyang International, South Korea respectively.
+            <BioYear>2018 </BioYear>
+            <BioBadge mr={2} >Summer Exchange </BioBadge>
+            Hong Kong University of Science and Technology, Hong Kong 
+            <br></br>
+            <BioBadge mr={2} >Winter Exchange </BioBadge>
+            Hanyang International, South Korea
         </BioSection>
         <BioSection>
-          <BioYear>2020</BioYear>
-          Semester Exchange at Delft University of Technology (Delft TU), Netherlands 
+            <BioYear>2020</BioYear>
+            <BioBadge mr={2} >Semester Exchange </BioBadge>
+                Delft University of Technology, Netherlands 
         </BioSection>
         <BioSection>
-          <BioYear>2021</BioYear>
-          Completed the Bachelor&apos;s Program in the Electrical Engineering
-          w/ Minor in Computer Science & Economics at National University of Singapore (NUS) with First Class Honours (4.77 / 5.0)
-          <Paragraph>
-            Relevant Software Engineering Modules: Programming Methodology (CS1010), Programming Methodology II (CS2030), Data Structure & Algo (CS2040), Database Technology & Management (IT2002), Software Product Engineering for Digital Market (CS3216), Computer Networks (EE4204)
-            {/* , Network Protocols and Applications (EE4210) */}
-          </Paragraph>
-          <Paragraph>
-            Relevant Machine Learning Modules:  Regression Analysis (ST3131), Artificial Intelligence (CS3243), Machine Learning (CS3244), Image Processing & Analysis (EE4704), Computer Vision (EE4212)
-            {/* , Fuzzy/Neural Systems (EE4305)  */}
-          </Paragraph>
+            <BioYear>2021</BioYear>
+            {/* <BioBadge mr={2} >Bachelor </BioBadge> */}
+            Bachelor&apos;s in the Electrical Engineering, {' '}
+            <b>4.77 / 5.0</b>, at National University of Singapore
+              {/* Bachelor&apos;s in the Electrical Engineering */}
+            <br></br>
+            <BioBadge>Minor</BioBadge>
+            <BioUnorderedList my={2}>
+              <ListItem>
+              AI (Computer Science) 
+              </ListItem>
+              <ListItem>
+              Economics              
+              </ListItem>
+            </BioUnorderedList>
+            <BioBadge mr={2} >Relevant SWE Modules </BioBadge> 
+            <BioUnorderedList my={2}>
+              <ListItem>
+                Programming Methodology (CS1010)
+              </ListItem>
+              <ListItem>
+                Programming Methodology II (CS2030)
+              </ListItem>
+              <ListItem>
+                Data Structure & Algo (CS2040)
+              </ListItem>
+              <ListItem>
+                Database Technology & Management (IT2002)
+              </ListItem>
+              <ListItem>
+                Software Product Engineering for Digital Market (CS3216)
+              </ListItem>
+              <ListItem>
+                Computer Networks (EE4204)
+              </ListItem>
+            </BioUnorderedList>
+              <BioBadge mr={2} >Relevant ML Modules </BioBadge> 
+            <BioUnorderedList my={2}>
+              <ListItem>
+              Regression Analysis (ST3131)
+              </ListItem>
+              <ListItem>
+              Artificial Intelligence (CS3243)  
+              </ListItem>
+              <ListItem>
+              Machine Learning (CS3244)          
+              </ListItem>
+              <ListItem>
+              Image Processing & Analysis (EE4704)
+              </ListItem>
+              <ListItem>
+              Computer Vision (EE4212)
+              </ListItem>
+            </BioUnorderedList>
+              {/* Programming Methodology (CS1010), Programming Methodology II (CS2030), Data Structure & Algo (CS2040), 
+              Database Technology & Management (IT2002), Software Product Engineering for Digital Market (CS3216), Computer Networks (EE4204) */}
+              {/* Relevant Machine Learning Modules:  Regression Analysis (ST3131), Artificial Intelligence (CS3243), Machine Learning (CS3244), Image Processing & Analysis (EE4704), Computer Vision (EE4212)
+            , Fuzzy/Neural Systems (EE4305)  */}
         </BioSection>
+
+       
       </Section>
 
       
@@ -173,32 +235,27 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          Frameworks / Popular Libaries
+          {/* Frameworks / Popular Libaries */}
+          Relevant Tools
         </Heading>
-        <Paragraph>
-          Frameworks: Django, AngularJS, React, Node.js 
-        </Paragraph>
-        <Paragraph>
-          Libaries: pandas, Highcharts, Three.js
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Software Tools / Application
-        </Heading>
-        <Paragraph>
-          Postman, Grafana, Prometheus, Postgres
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Design Tools
-        </Heading>
-        <Paragraph>
-          Figma
-        </Paragraph>
+        <List ml={4} my={4}>
+          <ListItem>
+            <Meta>Frameworks</Meta>
+            Django, AngularJS, React, Node.js 
+          </ListItem>
+          <ListItem>
+            <Meta>Libaries</Meta>
+            pandas, Highcharts, Three.js
+          </ListItem>
+          <ListItem>
+            <Meta>Tools / Application</Meta>
+            Postman, Grafana, Prometheus, Postgres
+          </ListItem>
+          <ListItem>
+            <Meta> Design Tools </Meta>
+            Figma
+          </ListItem>
+        </List>
       </Section>
 
       <Section delay={0.3}>
@@ -206,18 +263,18 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Coffee
+          Coffee, Sports (Squash, Badminton, Rollerblading, Snowboarding) & Eating Good Food
           {/* {' '} */}
           {/* <Link href="https://illust.odoruinu.net/" target="_blank">
             Drawing
           </Link> */}
-          , Sports (Squash, Badminton, Rollerblading, Snowboarding) 
+          {/* , Sports (Squash, Badminton, Rollerblading, Snowboarding)  */}
           {/* {' '} */}
           {/* <Link href="https://500px.com/p/mingjie" target="_blank">
             Photography
           </Link> */}
           {/* , Leica, Machine Learning */}
-          & Eating Good Food
+          {/* & Eating Good Food */}
         </Paragraph>
       </Section>
 
@@ -286,7 +343,7 @@ const Home = () => (
             title="Featured on National TV"
             thumbnail={thumbCNA}
           >
-            Featured in CNA & Ch5 for Smart City OS.
+            Demonstration of Smart City OS at World Cities Summit 2022
           </GridItem>
         </SimpleGrid>
 

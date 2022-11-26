@@ -3,16 +3,13 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-// import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-// import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-// import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-// import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-// import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-// import thumbStyly from '../public/images/works/styly_eyecatch.png'
-// import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-// import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbHootDat from '../public/images/works-mj/hootdat_eyecatch.png'
+import thumbSFEMS from '../public/images/works-mj/sfems_eyecatch21.png'
+import thumbFitNUS from '../public/images/works-mj/fitnus_eyecatch.png'
+import thumbSoundSystem from '../public/images/works-mj/soundsystem_eyecatch.png'
+import thumbSSMC from '../public/images/works-mj/ssmc_eyecatch.png'
+import thumbStuffSharing from '../public/images/works-mj/stuffsharing_eyecatch.png'
+
 
 const Works = () => (
   <Layout title="Works">
@@ -23,18 +20,14 @@ const Works = () => (
 
     <SimpleGrid columns={[1, 1, 2]} gap={6}>
     <Section>
-        <WorkGridItem id="inkdrop" title="Smart Facilities Estate Management System (SFEMS)" thumbnail={thumbInkdrop}>
-        Dashboard offering various operational workflows for facility management. SFEMs is a joint collaboration between ST-JTC on punggol digital district (PDD). 
+        <WorkGridItem id="sfems" title="SFEMS" thumbnail={thumbSFEMS}>
+        Management solution offering various operational workflows for facility management.
+        {/*  SFEMs is a joint collaboration between ST-JTC on punggol digital district (PDD).  */}
         </WorkGridItem>
       </Section>
       <Section>
-        <WorkGridItem id="inkdrop" title="Hoot Dat!" thumbnail={thumbInkdrop}>
+        <WorkGridItem id="hootdat" title="Hoot Dat!" thumbnail={thumbHootDat}>
         Hootdat is a digital game created to help foster closer bonds between people during the COVID-19 period.
-        </WorkGridItem>
-      </Section>
-      <Section>
-        <WorkGridItem id="inkdrop" title="Crowdfunding Platform" thumbnail={thumbInkdrop}>
-        Crowdfunding is a system of catalogue of projects looking for crowdfunding.
         </WorkGridItem>
       </Section>
       {/* <Section>
@@ -80,10 +73,16 @@ const Works = () => (
           Twitter client app for iPhone Safari
         </WorkGridItem>
       </Section> */}
+      <Section>
+        <WorkGridItem id="inkdrop" title="Crowdfunding Platform" thumbnail={thumbStuffSharing}>
+        {/* Crowdfunding is a  */}
+        System of catalogue of projects looking for crowdfunding.
+        </WorkGridItem>
+      </Section>
       <Section delay={0.5}>
         <WorkGridItem
-          id="freedbtagger"
-          thumbnail={thumbFreeDBTagger}
+          id=""
+          thumbnail={thumbFitNUS}
           title="FitNUS"
         >
           FitNUS is a fitness tracking system. It is a hardware
@@ -93,20 +92,20 @@ const Works = () => (
       </Section>
       <Section delay={0.5}>
         <WorkGridItem
-          id="freedbtagger"
-          thumbnail={thumbFreeDBTagger}
-          title="Real-time sound system"
+          id=""
+          thumbnail={thumbSoundSystem}
+          title="Real-time Sound System"
         >
-          Real-time sound system is a hardware
-          prototype that uses FPGA application device to
+          Hardware prototype that uses FPGA 
+          application device to
           play and record sounds.
         </WorkGridItem>
       </Section>
       <Section delay={0.5}>
         <WorkGridItem
-          id="freedbtagger"
-          thumbnail={thumbFreeDBTagger}
-          title="Tableau Dashboard project"
+          id="ssmcdashboard"
+          thumbnail={thumbSSMC}
+          title="SSMC Dashboard"
         >
           Created 2 interactive dashboards using Tableau
           for the department. Dashboards are connected to
@@ -210,9 +209,9 @@ const Works = () => (
   //       </Section>
   //       <Section delay={0.5}>
   //         <WorkGridItem
-  //           id="freedbtagger"
-  //           thumbnail={thumbFreeDBTagger}
-  //           title="freeDBTagger"
+  //           id=""
+  //           thumbnail={thumb}
+  //           title=""
   //         >
   //           Automatic audio file tagging tool using FreeDB for Windows
   //         </WorkGridItem>

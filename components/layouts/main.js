@@ -18,8 +18,7 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Ming Jie's homepage" />
         <meta name="author" content="Neo Ming Jie" />
         <meta name="author" content="mingjie" />
-        {/* <link rel="apple-touch-icon" href="apple-touch-icon.png" /> */}
-        <link rel="apple-touch-icon" href="user-avatar.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         {/* <meta name="twitter:title" content="Neo Ming Jie" />
         <meta name="twitter:card" content="summary_large_image" />
