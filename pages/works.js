@@ -21,12 +21,12 @@ const Works = () => (
     <SimpleGrid columns={[1, 1, 2]} gap={6}>
       <Section>
         <WorkGridItem id="sfems" title="SFEMS" thumbnail={thumbSFEMS}>
-        Facility Management System
+        Facility Management System for PDD
         </WorkGridItem>
       </Section>
       <Section delay={0.1}>
         <WorkGridItem id="hootdat" title="Hoot Dat!" thumbnail={thumbHootDat}>
-        Digital game created to help foster closer bonds between people during COVID-19.
+        Digital game to help foster closer bonds between people during COVID-19.
         </WorkGridItem>
       </Section>
     </SimpleGrid>
