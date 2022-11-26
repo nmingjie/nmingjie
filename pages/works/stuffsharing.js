@@ -43,7 +43,7 @@ const Work = () => (
           CRUD for Users, Stuff/Posts, Offers
         </ListItem>
         <ListItem>
-          Search for stuff
+          Searches
         </ListItem>
         <ListItem>
           Administrive Privileges
@@ -68,7 +68,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Team</Meta>
-          <span>Individual</span>
+          <span>Myself</span>
         </ListItem>
       </List>
 

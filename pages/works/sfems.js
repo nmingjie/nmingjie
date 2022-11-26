@@ -28,7 +28,7 @@ const Work = () => (
       </Title>
       <P>
         Smart Facility Estate Management System (SFEMS) offers various operational 
-        workflows to help facility managers manage estates.
+        workflows to help facility managers manage estates in a Operation Command and control (OC2),.
         SFEMs is a joint collaboration between ST-JTC for the punggol digital district (PDD)
         area in Singapore.
       </P>
@@ -84,6 +84,14 @@ const Work = () => (
         </WorkGridItem>
       </Section>
       </SimpleGrid>
+      <P>
+      <Badge>PDD</Badge> Integrate 23 front vertical systems e.g. lift, security system, 
+      district cooling system, fire alarm system etc
+      {/*  so as to achieve integrated operational control and monitoring for all verticals within the estate. */}
+      </P>
+      <P>
+      <Badge>ST Jurong East Branch</Badge> Integrate lift, airbitat, EV & BMS systems.
+      </P>
 
       <Divider my={6} />
 

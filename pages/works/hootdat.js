@@ -41,6 +41,14 @@ const Work = () => (
           <span>React, NodeJS/Express, Socket.IO, Redis, and PostgreSQL</span>
         </ListItem>
         <ListItem>
+          <Meta>UI/UX</Meta>
+          <span>Figma: {' '}
+          <Link href="https://www.figma.com/file/p80T4tiNZhJ4CuINrodi8S/Hoot-Dat?node-id=9%3A64&t=BSOWJqzNT3uFHQgJ-1" target="_blank">
+          My design!
+          </Link>
+          </span>
+        </ListItem>
+        <ListItem>
           <Meta>Team</Meta>
           <span>
           <Link href="https://github.com/gary-lgy" target="_blank">
