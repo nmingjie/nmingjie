@@ -10,12 +10,12 @@ import {
   ListItem,
   useColorModeValue,
   chakra,
-  Badge,
+  // Badge,
   // UnorderedList
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear, BioBadge, BioList, BioListItem, BioUnorderedList } from '../components/bio'
+import { BioSection, BioYear, BioBadge, BioUnorderedList } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
