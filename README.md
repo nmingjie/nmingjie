@@ -1,13 +1,16 @@
-# Ming Jie's Homepage
+<div align="center">
+  <img src="public/logo-light-nobg.png" alt="logo" width="128"/>
+  <h1>Personal Portfolio - V1</h1>
 
-[https://nmingjie.vercel.app/](https://nmingjie.vercel.app/)
+[www.nacu.me](https://nacu.me/)
+
+</div>
 
 ## Stack
 
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
 - [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
 - [Three.js](https://threejs.org/) - 3D library for JavaScript
-- [Framer Motion](https://www.framer.com/motion/) - An animation library for React
 
 ## Project structure
 
@@ -19,19 +22,30 @@ $PROJECT_ROOT
 ├── components
 │   # Non-react modules
 ├── lib
-│   # Static files for images and 3d model file
+│   # Static files for images and 3D model file
 └── public
 ```
 
+## Roadmap
+
+- [x] Basic structure - landpage, bio, experience, and projects
+- [x] Mobile responsiveness
+- [x] Light and dark mode
+- [x] Create landpage gif for README document
+
+## Highlights
+
+  <div align="center">
+    <img src="public/screenshots/landpage.gif" alt="landpage gif"/>
+  </div>
+<div align="justify">
+
 ## License
 
-MIT License.
+MIT
 
-You can create your own homepage for free without notifying me by forking this project under the following conditions:
+## Attributions
 
-- Add a link to [my homepage](https://www.craftz.dog/)
-- Do not use the 3d voxel dog
+- [Craftzdog's GitHub](https://github.com/craftzdog/craftzdog-homepage)
 
-Check out [LICENSE](./LICENSE) for more detail.
-
-
+</div>

@@ -1,0 +1,25 @@
+JEB
+- Airbitat
+- EV Charger
+- LPMS (Lift performance management system)
+- 
+
+BMS
+- AHU + PAHU
+- Chiller System (Chilled water pump, condenser water pump, cooling tower)
+- Fan Coil Unit,
+- Fan System (Fresh Air Fan, Toilet Exhaust Air Fan, Fan Coil Unit)
+- Generator
+- Power meter
+
+PDD
+- Lift
+- Fire Alarm System (Main alarm, sub alarm, pre action panel, sprinkler Alarm valve, sprinkler tank, sprinker pump, sprink pump control panel)
+- Eccalator
+- PWCS (Air Valve, Discharge Vaslve, Exchauster, Compactor)
+- DCS (Heat Exchanger)
+- PA (EVCS)
+
+
+VAP Integration
+- 

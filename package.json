@@ -1,32 +1,31 @@
 {
-  "name": "mingjie-homepage",
-  "version": "1.0.0",
-  "description": "Ming Jie's website",
+  "name": "personal-portfolio",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prettier": "prettier --write .",
     "lint": "next lint"
   },
-  "keywords": [],
-  "author": "Neo Ming Jie",
-  "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.8",
     "@chakra-ui/react": "^2.2.8",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "framer-motion": "^7.2.0",
-    "next": "^12.2.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@fontsource/m-plus-rounded-1c": "^4.5.10",
+    "file-saver": "^2.0.5",
+    "framer-motion": "6",
+    "next": "12.2.5",
+    "next-google-fonts": "^2.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-typed": "^1.2.0",
     "three": "^0.143.0"
   },
   "devDependencies": {
-    "eslint": "^8.22.0",
-    "eslint-config-next": "^12.2.5",
-    "prettier": "^2.7.1"
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5"
   }
 }
