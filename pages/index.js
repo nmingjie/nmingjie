@@ -13,14 +13,14 @@ import {
 } from '@chakra-ui/react';
 
 // components
-import Container from '../components/container.js';
+import Container from '../components/container';
 // import { BioSection, BioYear } from '../components/Bio.js';
-import Paragraph from '../components/paragraph.js';
+import Paragraph from '../components/paragraph';
 import VoxelRaccoonLoader from '../components/voxel-raccoon-loader.js';
-import Creations from '../components/creations.js';
-import OldCreations from '../components/old-creations.js';
-import SocialMedia from '../components/social-media.js';
-import Section from '../components/section.js';
+import Creations from '../components/creations';
+import OldCreations from '../components/old-creations';
+import SocialMedia from '../components/social-media';
+import Section from '../components/section';
 
 
 import {
