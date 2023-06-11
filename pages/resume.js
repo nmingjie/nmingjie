@@ -23,9 +23,9 @@ import {
 } from '@chakra-ui/react';
 
 // components
-import Container from '../components/container';
+import Container from '../components/container.js';
 import { BioSection, BioYear } from '../components/bio.js';
-import Paragraph from '../components/paragraph';
+import Paragraph from '../components/paragraph.js';
 // import VoxelRaccoonLoader from '../components/voxel-raccoon-loader.js';
 // import Creations from '../components/Creations.js';
 // import SocialMedia from '../components/SocialMedia.js';
