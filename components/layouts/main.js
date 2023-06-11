@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import NavBar from '../Navbar'
+import NavBar from '../Navbar.js'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
 // import VoxelDogLoader from '../voxel-dog-loader'
@@ -23,9 +23,9 @@ const LazyVoxelRaccoon = dynamic(
 );
 
 // components
-import Paragraph from '../Paragraph';
-import SocialMedia from '../SocialMedia.js';
-import Section from '../Section.js';
+// import Paragraph from '../Paragraph';
+// import SocialMedia from '../SocialMedia.js';
+// import Section from '../Section.js';
 
 import {
 	useColorMode,

@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 
 import { ExternalLinkIcon } from '@chakra-ui/icons';
-import Paragraph from './Paragraph';
+import Paragraph from './Paragraph.js';
 
 
 import NextLink from 'next/link'

@@ -9,7 +9,7 @@ import hootdatThumbnail from '../public/images/creations/hootdat/hootdat_eyecatc
 import ssmcThumbnail from '../public/images/creations/ssmc/ssmc_eyecatch.png';
 
 
-import Paragraph from './Paragraph.js';
+// import Paragraph from './Paragraph.js';
 
 
 
