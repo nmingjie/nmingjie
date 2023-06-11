@@ -1,5 +1,5 @@
 import { SimpleGrid, Box, Badge } from '@chakra-ui/react';
-import CreationGridItem from './creationGridItem.js';
+import CreationGridItem from './creation-grid-item.js';
 
 // thumbnails
 import stuffsharingThumbnail from '../public/images/creations/stuffsharing/stuffsharing_eyecatch.png';
