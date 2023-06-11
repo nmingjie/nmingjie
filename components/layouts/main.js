@@ -7,9 +7,9 @@ import Footer from '../footer'
 
 import VoxelRaccoonLoader from '../voxel-raccoon-loader.js';
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
-import { ChevronRightIcon, DownloadIcon, ChatIcon } from '@chakra-ui/icons';
+// import { ChevronRightIcon, DownloadIcon, ChatIcon } from '@chakra-ui/icons';
 
 
 // raccoon voxel component
@@ -29,23 +29,20 @@ const LazyVoxelRaccoon = dynamic(
 
 import {
 	useColorMode,
-	Heading,
-	Stack,
-	Highlight,
-	Image,
-	Tabs,
-	TabList,
-	TabPanels,
-	Tab,
-	TabPanel,
-	List,
-	ListIcon,
-	ListItem,
-	Button,
+	// Heading,
+	// Stack,
+	// Highlight,
+	// Image,
+	// Tabs,
+	// TabList,
+	// TabPanels,
+	// Tab,
+	// TabPanel,
+	// List,
+	// ListIcon,
+	// ListItem,
+	// Button,
 } from '@chakra-ui/react';
-
-import Typed from 'react-typed';
-
 
 
 const Main = ({ children, router }) => {
