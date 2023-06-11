@@ -1,6 +1,6 @@
 import React from 'react';
 import { useColorMode, Button, Flex, Box } from '@chakra-ui/react';
-import NextLink from 'next/link';
+// import NextLink from 'next/link';
 // import DarkModeSwitch from '../components/DarkModeSwitch';
 // import Section from './Section.js';
 
