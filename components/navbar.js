@@ -15,8 +15,8 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import DarkModeSwitch from './darkModeSwitch'
-import Logo from './Logo'
+import DarkModeSwitch from './dark-mode-switch'
+import Logo from './logo'
 import { IoPerson } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {

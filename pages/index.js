@@ -18,7 +18,7 @@ import Container from '../components/container.js';
 import Paragraph from '../components/paragraph.js';
 import VoxelRaccoonLoader from '../components/voxel-raccoon-loader.js';
 import Creations from '../components/creations.js';
-import OldCreations from '../components/oldCreations.js';
+import OldCreations from '../components/old-creations.js';
 import SocialMedia from '../components/socialMedia.js';
 import Section from '../components/section.js';
 
