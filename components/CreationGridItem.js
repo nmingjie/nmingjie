@@ -5,12 +5,12 @@ import {
 	Box,
 	useColorMode,
 	Stack,
-	Link,
+	// Link,
 	Button,
 	LinkBox,
 } from '@chakra-ui/react';
 
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+// import { ExternalLinkIcon } from '@chakra-ui/icons';
 import Paragraph from './Paragraph.js';
 
 

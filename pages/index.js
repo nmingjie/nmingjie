@@ -1,4 +1,4 @@
-import Head from 'next/head';
+// import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
@@ -9,22 +9,13 @@ import {
 	Box,
 	Stack,
 	Highlight,
-	Image,
-	Tabs,
-	TabList,
-	TabPanels,
-	Tab,
-	TabPanel,
-	List,
-	ListIcon,
-	ListItem,
 	Button,
 } from '@chakra-ui/react';
 
 // components
-import Container from '../components/Container';
-import { BioSection, BioYear } from '../components/Bio.js';
-import Paragraph from '../components/Paragraph';
+import Container from '../components/Container.js';
+// import { BioSection, BioYear } from '../components/Bio.js';
+import Paragraph from '../components/Paragraph.js';
 import VoxelRaccoonLoader from '../components/voxel-raccoon-loader.js';
 import Creations from '../components/Creations.js';
 import OldCreations from '../components/OldCreations.js';
@@ -32,18 +23,22 @@ import SocialMedia from '../components/SocialMedia.js';
 import Section from '../components/Section.js';
 
 
-import { ChevronRightIcon, DownloadIcon, ChatIcon } from '@chakra-ui/icons';
+import {
+	// ChevronRightIcon,
+	// DownloadIcon,
+	ChatIcon
+} from '@chakra-ui/icons';
 
 import Typed from 'react-typed';
 
 const LazyVoxelRaccoon = dynamic(
 	() => import('../components/voxel-raccoon.js'),
 	{
-	  ssr: false,
-	  loading: () => <VoxelRaccoonLoader />,
+		ssr: false,
+		loading: () => <VoxelRaccoonLoader />,
 	}
-  
-  );
+
+);
 
 export default function Home() {
 	const router = useRouter();
@@ -137,7 +132,7 @@ export default function Home() {
 					display="flex"
 					flexDirection="column"
 					justifyContent="center"
-					// height="100vh"
+				// height="100vh"
 				>
 
 					<Section>
@@ -201,7 +196,7 @@ export default function Home() {
 											pb={6}
 											borderColor={
 												contentButtonBorderColor[
-													colorMode
+												colorMode
 												]
 											}
 											color={
@@ -217,7 +212,7 @@ export default function Home() {
 												],
 												borderColor:
 													contentButtonHoverBorderColor[
-														colorMode
+													colorMode
 													],
 											}}
 											onClick={() =>
