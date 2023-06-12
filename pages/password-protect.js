@@ -49,7 +49,7 @@ const PasswordProtectPage = (path) => {
               <span className="label-text text-error">{error}</span>
             </label>
           )}
-        <button ml="100px" >Submit</button>
+        <button ml="100px" >Submit </button>
       </div>
 
       </form>
