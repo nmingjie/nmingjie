@@ -1,8 +1,7 @@
 // api/password-protect.ts
 import { NextApiRequest, NextApiResponse } from "next";
 import { serialize } from 'cookie';
-export default async function handler(req: NextApiRequest, res:NextApiResponse){
-    console.log("request is ",req);
+export default async function handler(req, res){
 
     if(req.method !== "POST"){
         res.status(405).send("Method Not Allowed")

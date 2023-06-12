@@ -39,12 +39,6 @@ const PasswordProtectPage = (path) => {
               </div>
             </div>
           </form>
-          <a
-            href="https://storyset.com/business"
-            className="link text-xs my-10"
-          >
-            Business illustrations by Storyset
-          </a>
         </div>
       </div>
     </div>
