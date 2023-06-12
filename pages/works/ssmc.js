@@ -47,7 +47,7 @@ import ssmcOverviewThumbnail from '../../public/images/creations/ssmc/ssmc_overv
 
 import React, { Component } from 'react'
 import Protect from 'react-app-protect'
-import 'react-app-protect/dist/index.css'
+// import 'react-app-protect/dist/index.css'
 
 function Work() {
 
