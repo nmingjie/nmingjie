@@ -62,9 +62,9 @@ import demoWcsCnaImage from '../../public/images/creations/sfems/demo/sfems_demo
 import demoWcsMinisterImage from '../../public/images/creations/sfems/demo/wcs-minister.jpg';
 import demoScImage from '../../public/images/creations/sfems/demo/sfems_demo_sc.png';
 
-import React, { Component } from 'react'
-import Protect from 'react-app-protect'
-import 'react-app-protect/dist/index.css'
+// import React, { Component } from 'react'
+// import Protect from 'react-app-protect'
+// import 'react-app-protect/dist/index.css'
 
 function Work() {
 
@@ -132,15 +132,7 @@ function Work() {
     };
 
     return (
-        <Protect sha512='b9c2657616de623c869b0352fc717f32b68b9edd1fa068d045182c1a4892b922087cbd3fa11dfc3c2bc1f12659d426e84040060ac807d8c384c50a5acd1174ce'
-            blur={'true'}
-            styles={{
-                header: { 'font-size': 'medium' },
-                input: { border: 'solid', width: '100%', 'border-radius': 8, 'border-color': '#e6e6e6', 'background-color': 'hsla(0,0%,56.5%,.075)', padding: 6 },
-                // wrapper : {color:'teal'},
-                button: { border: 'solid', 'border-radius': 8, 'color': '#828282', 'box-shadow': '#e6e6e6', padding: 4, 'padding-left': 8, 'padding-right': 8 },
-            }}
-        >
+
             <Container width="100%">
                 <Stack
                     spacing={16}
@@ -881,7 +873,6 @@ function Work() {
 
                 </Stack>
             </Container>
-        </Protect>
 
     )
 }
