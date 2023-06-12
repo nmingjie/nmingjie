@@ -15,7 +15,7 @@ import ssmcThumbnail from '../public/images/creations/ssmc/ssmc_eyecatch.png';
 
 const Creations = () => {
 	return (
-		<SimpleGrid columns={[1, null, 3, null, null]} gap={6} pt={4}>
+		<SimpleGrid columns={[1, null , 3, null, null]} gap={6} pt={4}>
 			<Box >
 				<CreationGridItem
 					title="SFEMS (CityOS)"

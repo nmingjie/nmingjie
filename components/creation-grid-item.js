@@ -62,6 +62,7 @@ const CreationGridItem = ({ thumbnail, children, title, link, id }) => {
 					mb={8}
 					borderRadius="5px"
 					overflow="hidden"
+					justifyContent={"center"}
 				// height={190}
 				// width={282}
 				>
