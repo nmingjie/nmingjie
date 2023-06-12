@@ -26,13 +26,13 @@ import {
 } from '@chakra-ui/react';
 
 // components
-import Container from '../../components/Container';
+import Container from '../../components/container';
 import { BioSection, BioYear } from '../../components/Bio.js';
-import Paragraph from '../../components/Paragraph';
+import Paragraph from '../../components/paragraph';
 import VoxelRaccoonLoader from '../../components/voxel-raccoon-loader.js';
-import Creations from '../../components/Creations.js';
+import Creations from '../../components/creations.js';
 import SocialMedia from '../../components/SocialMedia.js';
-import Section from '../../components/Section.js';
+import Section from '../../components/section.js';
 
 import { ChevronRightIcon, DownloadIcon, ChatIcon, ExternalLinkIcon } from '@chakra-ui/icons';
 

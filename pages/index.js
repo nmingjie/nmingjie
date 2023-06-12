@@ -19,7 +19,7 @@ import Paragraph from '../components/paragraph'
 import VoxelRaccoonLoader from '../components/voxel-raccoon-loader.js';
 import Creations from '../components/creations'
 import OldCreations from '../components/old-creations'
-import SocialMedia from '../components/social-media'
+import SocialMedia from '../components/social-media.js'
 import Section from '../components/section'
 
 

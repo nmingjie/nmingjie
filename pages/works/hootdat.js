@@ -27,7 +27,7 @@ import {
 
 // components
 import Container from '../../components/container';
-import { BioSection, BioYear } from '../../components/bio.js';
+// import { BioSection, BioYear } from '../../components/bio.js';
 import Paragraph from '../../components/paragraph';
 import VoxelRaccoonLoader from '../../components/voxel-raccoon-loader.js';
 import Creations from '../../components/creations.js';
