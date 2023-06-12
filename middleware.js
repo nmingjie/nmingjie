@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 const isPasswordEnabled = !!process.env.PASSWORD_PROTECT
-export async function middleware(req: NextRequest){
+export async function middleware(req){
     const isLoggedIn = req.cookies.has('login');
     const isPathPasswordProtect = req.nextUrl.pathname.startsWith("/password-protect")
 
