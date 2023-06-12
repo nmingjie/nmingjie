@@ -125,6 +125,170 @@ function Resume() {
 
                 </Box>
 
+                <Box>
+                    <Box display={'flex'}>
+                        <Box>
+                            <Heading
+                                as="h2"
+                                variant="section-title"
+                                mb={6}
+                                fontSize={[
+                                    '3xl',
+                                    null,
+                                    '3.5xl',
+                                    null,
+                                    null,
+                                    null,
+                                ]}
+                                color={headingColor[colorMode]}
+                            >
+                                / Skills
+
+                            </Heading>
+                            <Box fontSize={['sm', null, 'md', null, null, null]} pt={4}>
+                        <Paragraph>
+                            Here are some of the programming languages I am familiar with:
+                        </Paragraph>
+                        <Box display="flex" justifyContent={'center'}>
+                            <Box
+                                display="flex"
+                                // justifyContent={'space-evenly'}
+                                gap={'20%'}
+                                width={'100%'}  
+                            >
+                                <List spacing={1} pt={4} pb={4}>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>C</Paragraph>
+                                    </ListItem>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>Java</Paragraph>
+                                    </ListItem>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>JavaScript</Paragraph>
+                                    </ListItem>
+                                </List>
+                                <List spacing={1} pt={4} pb={4}>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>Python</Paragraph>
+                                    </ListItem>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>SQL</Paragraph>
+                                    </ListItem>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>HTML 5.0 & CSS</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </Box>
+                        </Box>
+                    </Box>
+                    <Box fontSize={['sm', null, 'md', null, null, null]} pt={4}>
+                        <Paragraph>
+                            Here are some of the technologies I have been
+                            working with:
+                        </Paragraph>
+                        <Box display="flex" justifyContent={'center'}>
+                            <Box
+                                display="flex"
+                                // justifyContent={'space-around'}
+                                gap={'20%'}
+
+                                width={'100%'}
+                            >
+                                <List spacing={1} pt={4} pb={4}>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>AngularJS</Paragraph>
+                                    </ListItem>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>Django</Paragraph>
+                                    </ListItem>
+                                </List>
+                                <List spacing={1} pt={4} pb={4}>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>React</Paragraph>
+                                    </ListItem>
+                                    <ListItem
+                                        display="flex"
+                                        alignItems="center"
+                                    >
+                                        <ListIcon
+                                            as={ChevronRightIcon}
+                                            color={listIconsColor[colorMode]}
+                                        />
+                                        <Paragraph>Figma</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </Box>
+                        </Box>
+
+                    </Box>
+                        </Box>
+                    </Box>
+
+                </Box>
+                
                 <Box id="about-me">
                     <Box display={'flex'}>
                         <Box>
@@ -386,170 +550,6 @@ function Resume() {
                         Outside of work, I have a passion for coffee. Additionally, I actively engage in sports such as
                         squash, badminton & roller-blading, which not only keep me physically active but also allow me to foster teamwork and competitive spirit.
                     </Paragraph>
-
-                </Box>
-
-                <Box>
-                    <Box display={'flex'}>
-                        <Box>
-                            <Heading
-                                as="h2"
-                                variant="section-title"
-                                mb={6}
-                                fontSize={[
-                                    '3xl',
-                                    null,
-                                    '3.5xl',
-                                    null,
-                                    null,
-                                    null,
-                                ]}
-                                color={headingColor[colorMode]}
-                            >
-                                / Skills
-
-                            </Heading>
-                            <Box fontSize={['sm', null, 'md', null, null, null]} pt={4}>
-                        <Paragraph>
-                            Here are some of the programming languages I am familiar with:
-                        </Paragraph>
-                        <Box display="flex" justifyContent={'center'}>
-                            <Box
-                                display="flex"
-                                // justifyContent={'space-evenly'}
-                                gap={'20%'}
-                                width={'100%'}  
-                            >
-                                <List spacing={1} pt={4} pb={4}>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>C</Paragraph>
-                                    </ListItem>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>Java</Paragraph>
-                                    </ListItem>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>JavaScript</Paragraph>
-                                    </ListItem>
-                                </List>
-                                <List spacing={1} pt={4} pb={4}>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>Python</Paragraph>
-                                    </ListItem>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>SQL</Paragraph>
-                                    </ListItem>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>HTML 5.0 & CSS</Paragraph>
-                                    </ListItem>
-                                </List>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box fontSize={['sm', null, 'md', null, null, null]} pt={4}>
-                        <Paragraph>
-                            Here are some of the technologies I have been
-                            working with:
-                        </Paragraph>
-                        <Box display="flex" justifyContent={'center'}>
-                            <Box
-                                display="flex"
-                                // justifyContent={'space-around'}
-                                gap={'20%'}
-
-                                width={'100%'}
-                            >
-                                <List spacing={1} pt={4} pb={4}>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>AngularJS</Paragraph>
-                                    </ListItem>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>Django</Paragraph>
-                                    </ListItem>
-                                </List>
-                                <List spacing={1} pt={4} pb={4}>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>React</Paragraph>
-                                    </ListItem>
-                                    <ListItem
-                                        display="flex"
-                                        alignItems="center"
-                                    >
-                                        <ListIcon
-                                            as={ChevronRightIcon}
-                                            color={listIconsColor[colorMode]}
-                                        />
-                                        <Paragraph>Figma</Paragraph>
-                                    </ListItem>
-                                </List>
-                            </Box>
-                        </Box>
-
-                    </Box>
-                        </Box>
-                    </Box>
 
                 </Box>
 
