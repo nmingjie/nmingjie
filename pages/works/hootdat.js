@@ -29,9 +29,9 @@ import {
 import Container from '../../components/container';
 // import { BioSection, BioYear } from '../../components/bio.js';
 import Paragraph from '../../components/paragraph';
-import VoxelRaccoonLoader from '../../components/voxel-raccoon-loader.js';
-import Creations from '../../components/creations.js';
-import SocialMedia from '../../components/socialMedia.js';
+// import VoxelRaccoonLoader from '../../components/voxel-raccoon-loader.js';
+// import Creations from '../../components/creations.js';
+// import SocialMedia from '../../components/social-media.js';
 import Section from '../../components/section.js';
 
 import { ChevronRightIcon, DownloadIcon, ChatIcon, ExternalLinkIcon } from '@chakra-ui/icons';
