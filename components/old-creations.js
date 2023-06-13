@@ -62,7 +62,7 @@ const OldCreations = () => {
 			</Box>
 			<Box>
 				<CreationGridItem
-					title="Real-Time Sond System"
+					title="Real-Time Sound System"
 					thumbnail={soundsystemThumbnail}
 					id = "soundsystem"
 					// link="https://github.com/1391819/kdrama-dash"
