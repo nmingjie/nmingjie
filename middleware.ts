@@ -16,6 +16,9 @@ export const config = {
        * - _next/static (static files)
        * - favicon.ico (favicon file)
        */
-      '/((?!api|_next/static|favicon.ico|under-development.svg).*)',
+      // '/((?!api|_next/static|favicon.ico|under-development.svg).*)',
+      '/works/sfems',
+      '/works/cep',
+      '/works/ssmc'
     ],
   }
