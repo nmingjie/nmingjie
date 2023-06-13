@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 const isPasswordEnabled = !!process.env.PASSWORD_PROTECT
-export async function middleware(req : NextRequest){
+export async function middleware(req){
     const isLoggedIn = req.cookies.has('login');
     const isPathPasswordProtect = req.nextUrl.pathname.startsWith("/password-protect")
 
@@ -22,9 +22,9 @@ export const config = {
        * - favicon.ico (favicon file)
        */
       '/((?!api|_next/static|favicon.ico).*)',
-      '/works/sfems',
-      '/works/cep',
-      '/works/ssmc',
+      // '/works/sfems',
+      // '/works/cep',
+      // '/works/ssmc',
       // '/((?!api|_next/static|favicon.ico|works).*',
       // '/(works/*)'
     ],
