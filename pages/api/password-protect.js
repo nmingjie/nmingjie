@@ -19,8 +19,9 @@ export default async function handler(req, res){
 
     } 
     else {
-        const url = new URL("/password-protect", req.headers["origin"])
-        url.searchParams.append("error", "Incorrect Password")
-        res.redirect(url.toString())
+        // const url = new URL("/password-protect", req.headers["origin"])
+        // url.searchParams.append("error", "Incorrect Password")
+        // res.redirect(url.toString())
+        res.redirect(302, "/password-protect")
     }
 }
