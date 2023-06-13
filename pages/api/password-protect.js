@@ -7,6 +7,7 @@ export default async function handler(req, res){
         res.status(405).send("Method Not Allowed")
     }
     const password = req.body.password;
+    console.log(password);
     if(process.env.PASSWORD_PROTECT === password){
         const cookie = serialize('login', 'true', {
             path: '/',
@@ -23,5 +24,7 @@ export default async function handler(req, res){
         // url.searchParams.append("error", "Incorrect Password")
         // res.redirect(url.toString())
         res.redirect(302, "/password-protect")
+        
+        // throw new Error('Invalid password');
     }
 }
