@@ -18,13 +18,17 @@ import {
   Icon,
   InputGroup,
   Alert, AlertIcon, AlertDescription,
-  CircularProgress
+  CircularProgress,
+  Stack,
+  useColorMode,
+  Flex
 
 } from '@chakra-ui/react'
 
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 
 import { NextRequest, NextResponse } from "next/server";
+import Paragraph from '../components/paragraph';
 
 const PasswordProtectPage = (path) => {
   const router = useRouter();
@@ -50,7 +54,7 @@ const PasswordProtectPage = (path) => {
         headers: {
           "Content-type": "application/json; charset=UTF-8"
         }
-        ,redirect: 'follow'
+        , redirect: 'follow'
       })
       setIsLoading(false);
       // window.location.href = res.url;
@@ -62,63 +66,73 @@ const PasswordProtectPage = (path) => {
       setIsLoading(false);
       setPassword('');
     }
+
+    // const { colorMode } = useColorMode();
+
+    // const bgColor = {
+    //   light: '#EFE7DA',
+    //   dark: '#201F24',
+    // };
   };
 
 
   return (
 
-    <Container pt={8} pb={8} width='100%'>
-
-      <Heading as="h1" >The page is password protected.</Heading>
-      {/* <Text>Please contact the owner.</Text> */}
-      <Divider my={6} />
-
-      {error && <Box my={4}>
-        <Alert status="error" borderRadius={4}>
-          <AlertIcon />
-          <AlertDescription>{"Incorrect Password"}</AlertDescription>
-        </Alert>
-      </Box>}
-
-      <form  action="/api/password-protect" method="post" >
-      {/* onSubmit={handleSubmit}  */}
-        {/* action="/api/password-protect" method="post" */}
-        <FormControl isRequired mt={6}>
-          <FormLabel>Password</FormLabel>
-          <InputGroup>
-            <Input
-              variant='filled'
-              name="password"
-              type={showPassword ? 'text' : 'password'}
-              placeholder="*******"
-              size="lg"
-              onChange={event => setPassword(event.currentTarget.value)}
-            />
-            <InputRightElement width="3rem">
-              <Button h="1.5rem" size="sm" onClick={handlePasswordVisibility}>
-                {showPassword ? <ViewOffIcon /> : <ViewIcon />}
-              </Button>
-            </InputRightElement>
-          </InputGroup>
-        </FormControl>
-        <Button
-          colorScheme="teal"
-          variant="outline"
-          type="submit"
-          width="full"
-          mt={4}
-        >
-          {isLoading ? (
-            <CircularProgress isIndeterminate size="24px" color="teal" />
-          ) : (
-            'Submit'
-          )}
-        </Button>
-
-      </form>
+    // <Container width={'100%'}>
+    <Box align={'center'} mt = {8} mb={8}>
+      <Box width={'80%'} align={'center'}>
 
 
-    </Container>
+        <Heading as="h1" >The page is password protected.</Heading>
+        {/* <Text>Please contact the owner.</Text> */}
+        <Divider my={6} />
+
+        {error && <Box my={4}>
+          <Alert status="error" borderRadius={4}>
+            <AlertIcon />
+            <AlertDescription>{"Incorrect Password"}</AlertDescription>
+          </Alert>
+        </Box>}
+
+        <form action="/api/password-protect" method="post" >
+          {/* onSubmit={handleSubmit}  */}
+          {/* action="/api/password-protect" method="post" */}
+          <FormControl isRequired mt={6}>
+            <FormLabel>Password</FormLabel>
+            <InputGroup>
+              <Input
+                variant='filled'
+                name="password"
+                type={showPassword ? 'text' : 'password'}
+                placeholder="*******"
+                size="lg"
+                onChange={event => setPassword(event.currentTarget.value)}
+              />
+              <InputRightElement width="3rem">
+                <Button h="1.5rem" size="sm" onClick={handlePasswordVisibility}>
+                  {showPassword ? <ViewOffIcon /> : <ViewIcon />}
+                </Button>
+              </InputRightElement>
+            </InputGroup>
+          </FormControl>
+          <Button
+            colorScheme="teal"
+            variant="outline"
+            type="submit"
+            width="full"
+            mt={4}
+          >
+            {isLoading ? (
+              <CircularProgress isIndeterminate size="24px" color="teal" />
+            ) : (
+              'Submit'
+            )}
+          </Button>
+
+        </form>
+
+      </Box>
+    </Box>
 
 
   );

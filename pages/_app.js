@@ -92,19 +92,6 @@ function MyApp({ Component, pageProps, router }) {
 			</Layout>
 				</GlobalStyle>
 			</ColorModeProvider>
-			{/* <Layout router={router}>
-				<AnimatePresence
-					exitBeforeEnter
-					initial={true}
-					onExitComplete={() => {
-						if (typeof window !== 'undefined') {
-							window.scrollTo({ top: 0 })
-						}
-					}}
-				>
-					<Component {...pageProps} key={router.route} />
-				</AnimatePresence>
-			</Layout> */}
 		</ChakraProvider>
 		
 		
