@@ -703,21 +703,22 @@ function Work() {
                                 mb={8}
                                 borderRadius="5px"
                                 overflow="hidden"
+                                columnGap={4}
                             // justifyContent="center"
                             >
                                 <Image
                                     alt="Project thumbnail"
                                     objectFit={'cover'}
                                     src={performanceNodeImage}
-                                    height={190}
-                                    width={282}
+                                    // height={190}
+                                    // width={282}
                                 />
                                 <Image
                                     alt="Project thumbnail"
                                     objectFit={'cover'}
                                     src={performanceKafkaImage}
-                                    height={190}
-                                    width={282}
+                                    // height={190}
+                                    // width={282}
                                 />
 
                             </Box>
@@ -733,8 +734,8 @@ function Work() {
                                     alt="Project thumbnail"
                                     objectFit={'cover'}
                                     src={performanceVMImage}
-                                    height={310}
-                                    width={664}
+                                    // height={310}
+                                    // width={664}
                                 />
 
                             </Box>
@@ -794,6 +795,7 @@ function Work() {
                             borderRadius="5px"
                             overflow="hidden"
                             justifyContent="center"
+                            columnGap={4}
 
                         >
                             <Image
@@ -849,8 +851,8 @@ function Work() {
                             mb={8}
                             borderRadius="5px"
                             overflow="hidden"
-                            height={190}
-                            width={282}
+                            // height={190}
+                            // width={282}
                         >
                             <Image
                                 alt="Project thumbnail"
