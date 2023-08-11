@@ -340,7 +340,7 @@ function Work() {
 
                                 </ListItem>
                                 <ListItem>
-                                    Increased Facility Utilization: Quantify the increase in facility utilization rates due to the app's convenience and accessibility.
+                                    Increased Facility Utilization: Quantify the increase in facility utilization rates due to the app&apos convenience and accessibility.
                                 </ListItem>
                             </UnorderedList>
 
