@@ -2,6 +2,7 @@ import { SimpleGrid, Box, Badge } from '@chakra-ui/react';
 import CreationGridItem from './creation-grid-item.js';
 
 // thumbnails
+import femThumbnail from '../public/images/creations/fem/fem_eyecatch.png';
 import sfemsThumbnail from '../public/images/creations/sfems/sfems_eyecatch2.png';
 import cepThumbnail from '../public/images/creations/cep/cep_eyecatch.png';
 
@@ -16,6 +17,31 @@ import ssmcThumbnail from '../public/images/creations/ssmc/ssmc_eyecatch.png';
 const Creations = () => {
 	return (
 		<SimpleGrid columns={[1, null , 3, null, null]} gap={6} pt={4}>
+						<Box >
+				<CreationGridItem
+					title="Facility Booking"
+					thumbnail={femThumbnail}
+					id = "fem"
+				>
+					<Box pb={1}>
+						<Badge
+							className="stack-badge"
+							fontSize={['xs', null, null, null, null, null]}
+							colorScheme="teal"
+						>
+							React
+						</Badge>
+						<Badge
+							className="stack-badge"
+							fontSize={['xs', null, null, null, null, null]}
+							colorScheme="teal"
+						>
+							Next.js
+						</Badge>
+
+					</Box>
+				</CreationGridItem>
+			</Box>
 			<Box >
 				<CreationGridItem
 					title="SFEMS (CityOS)"
